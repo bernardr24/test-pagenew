@@ -152,15 +152,29 @@ a {
     margin-bottom: 80px;
 }
 
-.bg-img-mission {
-    position: relative;
-    width: 100%;
-    background-image: url("./img/group01/nature01.jpg");
-    background-size: contain;
-    background-position: right center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    display: flex;
+@media (min-width:992px) {
+    .bg-img-mission {
+        position: relative;
+        width: 100%;
+        background-image: url("./img/group01/nature01.jpg");
+        background-size: contain;
+        background-position: right center;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        display: flex;
+    }
+}
+
+@media (max-width:991px) {
+    .bg-img-mission {
+        position: relative;
+        width: 100%;
+        background-image: url("./img/group01/nature01.jpg");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        display: flex;
+    }
 }
 
 .bg-img-mission::before {
